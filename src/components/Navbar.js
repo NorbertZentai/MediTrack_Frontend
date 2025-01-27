@@ -61,14 +61,14 @@ export default function Navbar() {
 
 const styles = StyleSheet.create({
   navbar: {
-    width: "100%", // Teljes szélesség
-    height: theme.dimensions.navbarHeight, // Fix magasság (ha van definiálva)
+    width: "100",
+    height: theme.dimensions.navbarHeight,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 20,
-    backgroundColor: theme.colors.primary, // Navigációs sáv háttérszíne
-    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Árnyék a kiemeléshez (opcionális)
+    backgroundColor: theme.colors.primary,
+    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
   },
   logo: {
     fontSize: 18,

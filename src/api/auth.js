@@ -5,7 +5,6 @@ export const login = async (credentials) => {
       const response = await api.post("/auth/login", credentials);
       return response.data;
   } catch (error) {
-      console.error("Login error:", error.response?.data || error.message);
       throw error;
   }
 };
@@ -22,12 +21,9 @@ export const logout = async () => {
 
 export const fetchCurrentUser = async () => {
   try {
-      console.log("Fetching current user...");
       const response = await api.get("/auth/me");
-      console.log("Current user fetched:", response.data);
       return response.data;
   } catch (error) {
-      console.error("Error fetching current user:", error.response || error.message);
       throw error;
   }
 };

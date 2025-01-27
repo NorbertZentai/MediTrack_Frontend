@@ -27,9 +27,9 @@ export default function RegisterScreen({ navigation }) {
         email, 
         password, 
         gender, 
-        date_of_birth: dateOfBirth, 
+        date_of_birth,
         address, 
-        phone_number: phoneNumber 
+        phone_number,
       });
       Alert.alert('Siker', 'Sikeresen regisztráltál.');
       navigate('/login');
